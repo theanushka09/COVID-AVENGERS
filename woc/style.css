@@ -264,11 +264,13 @@ hr {
   padding: 20px;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+.hero{
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg2.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
 }
 
 .form-box{
