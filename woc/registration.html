@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body style="background-image: url(bg2.jpeg);background-size:cover">
+    <div class = "hero">
+<div class="form-box">
+    <div class = "button-box">
+        <div id = "btn"></div>
+            <button type="button" class = "toggle-btn" id = "one" style ="color:white" onclick="donor()">Donor</button>
+            <button type="button" class = "toggle-btn" id = "two" style="color:black" onclick="reci()">Recipient</button>
+        </div>
+        
+        <p style="color:rgb(21,59,97);text-align: center;padding: 0 10%;"><strong>Welcome to our website , we will be happy to help you.</strong></p>
+        <form class = "input-group" id = "donor" action="" >
+            <input type="text" class="input-field" placeholder="Requirement: e.g. Oxygen,Food,Beds" required>
+            <input type="text" class="input-field" placeholder="Quantity: e.g. One,Two" required>
+            <button type="submit" class="submit-btn" style="color: white;">Log in</button>
+        </form>
+        <form class = "input-group" id = "reci" action="" >
+            <input type="text" class="input-field" placeholder="Requirement: e.g. Oxygen,Food,Beds" required><br>
+            <input type="text" class="input-field" placeholder="Quantity: e.g. One,Two" required><br><br>
+            <button type="submit" class="submit-btn" style = "color: white;">Log in</button>
+        </form>
+</div>
+
+    </div>
+    <script>
+        var x = document.getElementById("donor");
+        var y = document.getElementById("reci");
+        var z = document.getElementById("btn");
+        var a = document.getElementById("one");
+        var b = document.getElementById("two")
+        function reci(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+            a.style.color = "rgb(21,59,97)";
+            b.style.color = "white";
+        }
+        function donor(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+            b.style.color = "rgb(21,59,97)";
+            a.style.color = "white";
+        }
+        
+    </script>
+    
+</body>
+</html>
