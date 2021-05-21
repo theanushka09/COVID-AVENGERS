@@ -118,8 +118,32 @@
    <div class = "content" style="position: absolute;text-transform: uppercase;top:40%;left:50%;transform: translate(-50%,-50%);text-align:center;">
       <h1 style = "color:rgb(255, 255, 255);font-size:60px;letter-spacing:3px;margin:0;">A  Dark Ambassador</h1>
       <p style = "font-weight: 900;margin:0 0 20px 0;color:rgb(255, 255, 255);font-size:15px;letter-spacing:2px;text-transform: uppercase;">let's serve a virtual hand</p>
-      <a link href="#REGISTER" style="background: rgb(21, 59, 97);padding: 10px 24px;color:white;text-decoration: none;font-size:18px;border-radius: 20px;">Sign in</a>
-   </div>
+      <button class="open-button" onclick="openForm()"><a style="background: rgb(21, 59, 97);padding: 10px 24px;color:white;text-decoration: none;font-size:18px;border-radius: 20px;">LOG IN</a></button>
+      <div class="form-popup" id="myForm">
+    <form class="form-container">
+    <h1>Login</h1><br><br>
+
+    <label for="email"><b>USERNAME</b></label>
+    <input type="text" placeholder="Enter username" name="username" required>
+
+    <label for="psw"><b>PASSWORD</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">LOGIN</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+    </form>
+  </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    </div>
  
   <!--content of the page-->
   <div class="content">
